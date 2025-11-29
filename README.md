@@ -1,5 +1,8 @@
 # LLM-TEXT-SUMMARIZER-HUGGINGFACE-TRANSFORMERS-
 strongest beginner LLM projects
+
+“I built a summarization tool using HuggingFace’s BART model. It uses an encoder-decoder transformer architecture that compresses long input text into shorter summaries. This project shows my understanding of tokenization, transformers, and how pre-trained LLMs perform sequence-to-sequence generation.”
+
 # LLM Text Summarizer (HuggingFace)
 
 This project demonstrates a simple **text summarization system** using
