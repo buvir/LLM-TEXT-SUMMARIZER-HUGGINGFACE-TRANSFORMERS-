@@ -1,8 +1,15 @@
 from transformers import pipeline
 
-def summarize_text(text, max_length=120, min_length=30):
+def summarize_text(text):
+    text = "Write a short summary under 20 words: " + text
+
     summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
-    summary = summarizer(text, max_length=max_length, min_length=min_length, do_sample=False)
+    summary = summarizer(
+        text,
+        max_length=30,
+        min_length=8,
+        do_sample=False
+    )
     return summary[0]["summary_text"]
 
 if __name__ == "__main__":
